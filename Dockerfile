@@ -5,7 +5,7 @@ COPY --from=appsource /run.sh /run.sh
 COPY --from=appsource /etc/kafka /etc/kafka
 COPY --from=appsource /app /app
 COPY --from=appsource /products /products
-COPY --from=appsource /etc/supervisor/conf.d/supervisord.conf /etc/supervisor/conf.d/
+COPY --from=appsource /etc/supervisor/conf.d/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 EXPOSE 8080
 ENV DEFAULT_INTER_BROKER_PROTOCOL_VERSION=2.4
 ENV JAVA_HOME=/usr/lib/jvm/zulu17-ca

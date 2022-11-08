@@ -8,3 +8,4 @@ I created this Dockerfile based on what I gleaned using alpine/dfimage and wagoo
 
 If you want to find out more, visit https://www.crowdstrike.com/products/observability/falcon-logscale/
 
+Read the Docker install documentation at https://library.humio.com/humio-server/installation-containers-docker.html

@@ -4,5 +4,7 @@ Humio is now known as CrowdStrike Falcon® LogScale. This container pulls the of
 
 Don't reach out to CrowdStrike for support on this. This is purely an experiment in comparing architectures for efficiency and throughput, and just how low a machine I can get this to run on.
 
+I created this Dockerfile based on what I gleaned using alpine/dfimage and wagoodman/dive.
+
 If you want to find out more, visit https://www.crowdstrike.com/products/observability/falcon-logscale/
 

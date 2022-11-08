@@ -9,3 +9,7 @@ I created this Dockerfile based on what I gleaned using alpine/dfimage and wagoo
 If you want to find out more, visit https://www.crowdstrike.com/products/observability/falcon-logscale/
 
 Read the Docker install documentation at https://library.humio.com/humio-server/installation-containers-docker.html
+
+## containerd and nerdctl
+
+At present the Humio container does certain tasks as root. My experience is that it does not need to run this way, but it does create some awkwardness when building the container using rootless nerdctl. I've added nerdctl make option to simply elevate to root to build it.

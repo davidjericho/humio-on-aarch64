@@ -20,6 +20,5 @@ RUN wget --quiet https://cdn.azul.com/public_keys/alpine-signing@azul.com-5d5dc4
     apk --repository https://repos.azul.com/zulu/alpine --no-cache add zulu17-jre~=17.0.3 tzdata  && \
     apk add --no-cache bash supervisor util-linux
 VOLUME [ "/data", "/backup" ]
-RUN apk add --no-cache bash supervisor util-linux
 WORKDIR /data
 CMD /bin/bash -c /run.sh
